@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CommentsFeedComponent } from './comments-feed/comments-feed.component';
+import { CommentsListComponent } from './comments-list/comments-list.component';
+import { CommentViewComponent } from './comment-view/comment-view.component';
+import { CommentFormComponent } from './comment-form/comment-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CommentsFeedComponent,
+    CommentsListComponent,
+    CommentViewComponent,
+    CommentFormComponent
   ],
   imports: [
     BrowserModule,
