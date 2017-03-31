@@ -1,3 +1,9 @@
-<p>
-  comment-view works!
-</p>
+  <div class="media">
+    <img gravatar [email]="comment.email" size="64" fallback="mm" class="d-flex align-self-start mr-3" data-src="holder.js/64x64" alt="64x64"  data-holder-rendered="true">
+    <div class="media-body">
+      <h5 class="mt-0">{{ comment.email }}</h5>
+      <p>
+        {{ comment.message }}
+      </p>
+    </div>
+  </div>

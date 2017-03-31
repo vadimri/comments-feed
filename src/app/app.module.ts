@@ -8,6 +8,10 @@ import { CommentsFeedComponent } from './comments-feed/comments-feed.component';
 import { CommentsListComponent } from './comments-list/comments-list.component';
 import { CommentViewComponent } from './comment-view/comment-view.component';
 import { CommentFormComponent } from './comment-form/comment-form.component';
+import { Gravatar } from 'ng2-gravatar-directive';
+import { SearchPipe } from './pipes/search.pipe';
+import {Angular2FontawesomeModule} from 'angular2-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +19,13 @@ import { CommentFormComponent } from './comment-form/comment-form.component';
     CommentsFeedComponent,
     CommentsListComponent,
     CommentViewComponent,
-    CommentFormComponent
+    CommentFormComponent,
+    Gravatar,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
+    Angular2FontawesomeModule,
     FormsModule,
     HttpModule
   ],

@@ -1,0 +1,11 @@
+:host {
+  margin: 5rem;
+  padding: 0;
+  background-color: pink;
+  text-align: left;
+
+  .feed {
+    padding: 0;
+    border: thin solid lightgray;
+  }
+}

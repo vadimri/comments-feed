@@ -1,7 +1,12 @@
-<p>
-  comments-list works!
-</p>
-<ul class="">
+<div class="search input-group input-group-lg">
+  <span class="input-group-addon transparent" id="basic-addon1">
+    <i fa [name]="'search'"></i>
+  </span>
+  <input type="text" [ngModel]="searchText" (ngModelChange)="updateFilter($event)" class="form-control"  placeholder="Filter" aria-describedby="basic-addon1">
+</div>
 
+<ul class="list-unstyled">
+  <li  class="media" *ngFor="let comment of comments | search : searchText">
+    <app-comment-view [comment]="comment"></app-comment-view>
+  </li>
 </ul>
-<app-comment-view></app-comment-view>
