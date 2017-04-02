@@ -16,6 +16,7 @@ by default server listen port 3001
 
 - Second: download (clone) the frontend
 > npm install
+
 > ng serve
 
 By default the application listen port 4200
