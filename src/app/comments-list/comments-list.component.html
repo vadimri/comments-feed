@@ -1,8 +1,8 @@
-<div class="search input-group input-group-lg">
-  <span class="input-group-addon transparent" id="basic-addon1">
+<div class="search input-group">
+  <span class="input-group-addon transparent" id="basic-addon">
     <i fa [name]="'search'"></i>
   </span>
-  <input type="text" [ngModel]="searchText" (ngModelChange)="updateFilter($event)" class="form-control"  placeholder="Filter" aria-describedby="basic-addon1">
+  <input type="text" [ngModel]="searchText" (ngModelChange)="updateFilter($event)" class="form-control"  placeholder="Filter" aria-describedby="basic-addon">
 </div>
 
 <ul class="list-unstyled">

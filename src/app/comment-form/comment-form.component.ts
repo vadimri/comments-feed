@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Comment } from '../models/comment';
+import {Comment, CommentFeed} from '../models/comment';
+import {FeedService} from '../services/feed.service';
 
 @Component({
   selector: 'app-comment-form',
@@ -8,16 +9,17 @@ import { Comment } from '../models/comment';
 })
 export class CommentFormComponent implements OnInit {
   submitted = false;
-  email: string;
-  message: string;
-  constructor() { }
+  email: string = '';
+  message: string = '';
+  constructor(private feedService: FeedService) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    let comment: Comment = new Comment(this.email, this.message);
+    let comment: Comment = new CommentFeed(this.email, this.message);
     this.submitted = true;
+    this.feedService.add(comment);
   }
 
 }

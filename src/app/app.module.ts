@@ -11,7 +11,8 @@ import { CommentFormComponent } from './comment-form/comment-form.component';
 import { Gravatar } from 'ng2-gravatar-directive';
 import { SearchPipe } from './pipes/search.pipe';
 import {Angular2FontawesomeModule} from 'angular2-fontawesome';
-
+import {FeedService} from './services/feed.service';
+import { CustomFormsModule } from 'ng2-validation'
 
 @NgModule({
   declarations: [
@@ -27,9 +28,10 @@ import {Angular2FontawesomeModule} from 'angular2-fontawesome';
     BrowserModule,
     Angular2FontawesomeModule,
     FormsModule,
+    CustomFormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ FeedService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
