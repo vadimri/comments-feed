@@ -1,5 +1,5 @@
 <div class="container-fluid form">
-  <form (ngSubmit)="onSubmit()" #commentForm="ngForm">
+  <form (ngSubmit)="onSubmit(); commentForm.reset();" #commentForm="ngForm">
     <div class="container">
       <div class="form-group">
         <input type="text" class="form-control" id="author" aria-describedby="emailHelp" placeholder="Email" required

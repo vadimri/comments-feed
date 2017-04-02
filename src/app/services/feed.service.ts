@@ -23,7 +23,6 @@ export class FeedService {
 
   add(comment: Comment): void {
     this.addComment(comment).then(comments => this.comments$.next([... comments]));
-    // this.comments$.next(this.comments);
   }
 
   getComments() {

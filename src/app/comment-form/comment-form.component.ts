@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Comment, CommentFeed} from '../models/comment';
 import {FeedService} from '../services/feed.service';
+import {email} from 'ng2-validation/dist/email';
 
 @Component({
   selector: 'app-comment-form',
