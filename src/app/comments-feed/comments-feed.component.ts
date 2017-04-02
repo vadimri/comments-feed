@@ -16,7 +16,6 @@ export class CommentsFeedComponent implements OnInit {
   ngOnInit() {
     this.feedService.getComments().subscribe(comments => {
       this.comments = [... comments];
-      console.log(JSON.stringify(this.comments))
     } );
   }
 

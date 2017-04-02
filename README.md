@@ -8,6 +8,8 @@ The item that appear in the feed contain a gravatar photo (https://en.gravatar.c
 The web page include a filter area which allows the user to filter the items.
 
 # Run
+> npm install
 > ng serve
 
-the application listen port 4200
+By default the application listen port 4200
+> http://localhost:4200 // for example
